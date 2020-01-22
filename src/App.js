@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Chart from "./Graph";
+import CustomizedTables from "./Table";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+// data variable stores an array of key/value points that are displayed on the graph
+const data = [
+  { a: 1, b: 3, c: 10 },
+  { a: 3, b: 20, c: 12 },
+  { a: -1, b: -5, c: -4 },
+];
+
+/**
+ * @param None
+ * @public
+ */
+// main app that renders chart and table components
+const App = () => (
+  <div className="app">
+    <h1>Chart and Table Example</h1>
+
+    <section className="chart"> 
+      <Chart data={data} />
+    </section>
+
+    <section className="table">
+      <CustomizedTables data={data} />
+    </section>
+    
+  </div>
+);
 
 export default App;
