@@ -17,9 +17,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The graph displays current data that is passed to data variable in App.js component.<br />
 The data format example:  [
-  { a: 1, b: 3, c: 10 },<br />
-  { a: 3, b: 20, c: 12 },<br />
-  { a: -1, b: -5, c: -4 },<br />
+  { a: 1, b: 3, c: 10 },
+  { a: 3, b: 20, c: 12 },
+  { a: -1, b: -5, c: -4 },
 ];<br />
 In addition to data graphical representation the table content is being updated <br />
 displaying current data values.
