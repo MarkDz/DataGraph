@@ -4,6 +4,9 @@
 
 ## Setup
 
+Clone or fork repository
+cd to data-graph folder
+
 ### `npm install` 
 ### `npm start`
 
